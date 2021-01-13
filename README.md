@@ -22,5 +22,21 @@ This method is used to save an image to any storage devices.
 It is a keyboard binding function, the function waits for specified miliseconds for any keyboard event .If you press any key in that time,the program continues.
 ## destroyAllWindows
 simply destroys all the windows we created.
-
+## output:
 ![image](https://user-images.githubusercontent.com/72590819/104425163-568dd580-55a6-11eb-8757-8898f0fa0f82.png)
+
+
+## 2.develop a program to perform linear transformation of an image[scaling and rotation]?
+Scalar transformation:
+import cv2 
+import numpy as np
+src=cv2.imread('download.jpg',cv2.IMREAD_UNCHANGED)
+scale_p=200
+width=int(src.shape[1]*scale_p/100)
+height=int(src.shape[0]*scale_p/100)
+dsize=(width,height)
+result=cv2.resize(src,dsize)
+cv2.imwrite('downloa.jpg',result)
+cv2.imshow('original',result)
+
+cv2.waitKey(0)
