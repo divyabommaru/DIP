@@ -43,6 +43,20 @@ cv2.waitKey(0)
 ## output:
 
 ![image](https://user-images.githubusercontent.com/72590819/104428858-f8afbc80-55aa-11eb-95b4-e98b74f399ad.png)
+import cv2 
+import numpy as np
+src=cv2.imread('download.jpg')
+image=cv2.imshow('download.jpg',src) 
+windowsname=image
+image=cv2.rotate(src,cv2.ROTATE_90_CLOCKWISE)
+
+cv2.imshow('windowsname',image)
+
+cv2.waitKey(0)
+
+## output:
+
+
 ## 4.Develope a program to convert a colour image grayscale and binary image
 import cv2
 originalImage=cv2.imread('download1.jpg')
