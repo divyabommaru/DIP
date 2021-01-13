@@ -40,5 +40,17 @@ cv2.imwrite('downloa.jpg',result)
 cv2.imshow('original',result)
 
 cv2.waitKey(0)
+## output:
 
 ![image](https://user-images.githubusercontent.com/72590819/104428858-f8afbc80-55aa-11eb-95b4-e98b74f399ad.png)
+## 4.Develope a program to convert a colour image grayscale and binary image
+import cv2
+originalImage=cv2.imread('download1.jpg')
+grayImage = cv2.cvtColor(originalImage,cv2.COLOR_BGR2GRAY)
+(thresh, blackAndWhiteImage) = cv2.threshold(grayImage,127,225,cv2.THRESH_BINARY)
+cv2.imshow('Black White Image', blackAndWhiteImage)
+cv2.imshow('OriginalImage', originalImage)
+cv2.imshow('Gray Image', grayImage)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
