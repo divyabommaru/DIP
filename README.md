@@ -68,4 +68,5 @@ cv2.imshow('OriginalImage', originalImage)
 cv2.imshow('Gray Image', grayImage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+## output:
 
