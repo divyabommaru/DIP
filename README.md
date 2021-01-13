@@ -55,6 +55,7 @@ cv2.imshow('windowsname',image)
 cv2.waitKey(0)
 
 ## output:
+![image](https://user-images.githubusercontent.com/72590819/104429962-2b0de980-55ac-11eb-9032-2a85c4128229.png)
 
 
 ## 4.Develope a program to convert a colour image grayscale and binary image
