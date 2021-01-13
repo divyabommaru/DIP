@@ -185,7 +185,7 @@ for i in range(M.shape[0]):
         N[i][j] = sumNeighbors(M, i, j)
 
 print ("Original matrix:\n", M)
-print ("Summed neighbors matrix:\n", N
+print ("Summed neighbors matrix:\n", N)
 
 
 
