@@ -92,6 +92,7 @@ cv2.destroyAllWindows()
 ##output:
 
 ![image](https://user-images.githubusercontent.com/72590819/104435718-b5594c00-55b2-11eb-946c-83228eb6651a.png)
+![image](https://user-images.githubusercontent.com/72590819/104435858-e2a5fa00-55b2-11eb-9d8c-a3f7c59583a9.png)
 
 
 
