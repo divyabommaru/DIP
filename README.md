@@ -40,3 +40,5 @@ cv2.imwrite('downloa.jpg',result)
 cv2.imshow('original',result)
 
 cv2.waitKey(0)
+
+![image](https://user-images.githubusercontent.com/72590819/104428858-f8afbc80-55aa-11eb-95b4-e98b74f399ad.png)
