@@ -104,6 +104,8 @@ img=Image.fromarray(array)
 img.save('download.jpg')
 img.show()
 C.waitKey(0)
+output:
+![image](https://user-images.githubusercontent.com/72590819/104436059-2567d200-55b3-11eb-94cd-b44f2a86c40e.png)
 
 
 
