@@ -72,5 +72,27 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72590819/104435096-fe5cd080-55b1-11eb-8be5-3fd4ad79a850.png)
 ![image](https://user-images.githubusercontent.com/72590819/104435390-585d9600-55b2-11eb-84d7-ed5dadb69c74.png)
 
+5.Develop a program to convert a colour image to different colour space
+
+import cv2 
+img = cv2.imread('download1.jpg') 
+img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) 
+cv2.imshow('hsv', img) 
+cv2.waitKey(0)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2LAB) 
+cv2.imshow('lab', img) 
+cv2.waitKey(0)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb) 
+cv2.imshow('crcy', img) 
+cv2.waitKey(0)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+cv2.imshow('gray', img) 
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+
+
+
 
 
