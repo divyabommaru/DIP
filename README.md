@@ -162,6 +162,7 @@ cv2.waitKey(0)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/104436384-8b545980-55b3-11eb-920c-8539526f3a98.png)
 ## 7.find the neighborhood values of the matrix
+## program:
 import numpy as np
 
 M = [[1, 2, 3],
