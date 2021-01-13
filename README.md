@@ -186,6 +186,8 @@ for i in range(M.shape[0]):
 
 print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
+## output:
+![image](https://user-images.githubusercontent.com/72590819/104441777-23554180-55ba-11eb-89b3-300fc7997850.png)
 
 
 
