@@ -23,3 +23,4 @@ It is a keyboard binding function, the function waits for specified miliseconds 
 ## destroyAllWindows
 simply destroys all the windows we created.
 
+![image](https://user-images.githubusercontent.com/72590819/104425163-568dd580-55a6-11eb-8757-8898f0fa0f82.png)
