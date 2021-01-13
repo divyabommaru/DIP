@@ -93,6 +93,18 @@ cv2.destroyAllWindows()
 
 ![image](https://user-images.githubusercontent.com/72590819/104435718-b5594c00-55b2-11eb-946c-83228eb6651a.png)
 ![image](https://user-images.githubusercontent.com/72590819/104435858-e2a5fa00-55b2-11eb-9d8c-a3f7c59583a9.png)
+6.develop a program to create an image from 2D array. Generate array of random size.
+import numpy as np
+from PIL import Image
+import cv2 as C
+array = np.zeros([100,200,3],dtype=np.uint8)
+array[:,:100]=[150,128,0]
+array[:,100:]=[0,0,255]
+img=Image.fromarray(array)
+img.save('download.jpg')
+img.show()
+C.waitKey(0)
+
 
 
 
