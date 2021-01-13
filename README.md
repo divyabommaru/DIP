@@ -9,12 +9,10 @@ Reduces model complexity: Consider training neural article on RGB images of 10x1
 For other algorithms to work: There are many algorithms that are customized to work only on grayscaled images e.g. Canny edge detection function pre-implemented in OpenCV library works on Grayscaled images only.
 ## program:
 import cv2 
-cv2.imshow('download', img) 
+image=cv2.imread('picture.jpg',0) 
+cv2.imshow('grayscale',image)
 cv2.waitKey(0)
-grayimg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
-cv2.imshow('Grayscale', grayimg)
-cv2.waitKey(0)
-cv2.imwrite('download.jpg',grayimg)
+cv2.imwrite('gray scale',image)
 cv2.destroyAllWindows()
 ## imshow()
 This function  in pyplot madules of matplotlib lib is used display as an image.
@@ -24,3 +22,4 @@ This method is used to save an image to any storage devices.
 It is a keyboard binding function, the function waits for specified miliseconds for any keyboard event .If you press any key in that time,the program continues.
 ## destroyAllWindows
 simply destroys all the windows we created.
+
