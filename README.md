@@ -89,7 +89,9 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow('gray', img) 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+##output:
 
+![image](https://user-images.githubusercontent.com/72590819/104435718-b5594c00-55b2-11eb-946c-83228eb6651a.png)
 
 
 
