@@ -305,7 +305,7 @@ int main()
  p * q;
 return 0;
 }
-
+output:
 
 
 
