@@ -28,7 +28,7 @@ simply destroys all the windows we created.
 
 ## 2.develop a program to perform linear transformation of an image[scaling and rotation]?
 ## Scalar transformation:Image resizing refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image .
-## cv2.resize() method refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image 
+## cv2.resize() method refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image .
 ## imshow() function in pyplot module of matplotlib library is used to display data as an image
 ## program:
 import cv2 
@@ -189,7 +189,122 @@ print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/104441777-23554180-55ba-11eb-89b3-300fc7997850.png)
+## 7.write a program on operator overloading
 
+In C++, we can make operators to work for user defined classes. This means C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
+## program
+#include <iostream>
+using namespace std;
+class matrix
+{
+ int r1, c1, i, j, a1;
+ int a[10][10];
+
+public:int get()
+ {
+  cout << "Enter the row and column size for the  matrix\n";
+  cin >> r1;
+  cin >> c1;
+   cout << "Enter the elements of the matrix\n";
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    cin>>a[i][j];
+
+   }
+  }
+ 
+ 
+ };
+ void operator+(matrix a1)
+ {
+ int c[i][j];
+  
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] + a1.a[i][j];
+    }
+   
+  }
+  cout<<"addition is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+
+ };
+
+  void operator-(matrix a2)
+ {
+ int c[i][j];
+  
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] - a2.a[i][j];
+    }
+   
+  }
+  cout<<"subtraction is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+ };
+
+ void operator*(matrix a3)
+ {
+  int c[i][j];
+
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    c[i][j] =0;
+    for (int k = 0; k < r1; k++)
+    {
+     c[i][j] += a[i][k] * (a3.a[k][j]);
+    }
+  }
+  }
+  cout << "multiplication is\n";
+  for (i = 0; i < r1; i++)
+  {
+   cout << " ";
+   for (j = 0; j < c1; j++)
+   {
+    cout << c[i][j] << "\t";
+   }
+   cout << "\n";
+  }
+ };
+
+};
+
+int main()
+{
+ matrix p,q;
+ p.get();
+ q.get();
+ p + q;
+ p - q;
+ p * q;
+return 0;
+}
 
 
 
