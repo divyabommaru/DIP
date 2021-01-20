@@ -189,7 +189,7 @@ print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/104441777-23554180-55ba-11eb-89b3-300fc7997850.png)
-## 7.write a program on operator overloading
+## 8.write a program on operator overloading
 
 In C++, we can make operators to work for user defined classes. This means C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
 ## program
@@ -308,7 +308,7 @@ return 0;
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105163064-43a86300-5ac8-11eb-89ae-a8a732059692.png)
 
-## 8.write a program to display the nagation of an image
+## 9.write a program to display the nagation of an image
 The negative of an image is achieved by replacing the intensity ‘i’ in the original image by ‘i-1’, i.e. the darkest pixels will become the brightest and the brightest pixels will become the darkest. Image negative is produced by subtracting each pixel from the maximum intensity value.
 ## program:
 import cv2
