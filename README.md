@@ -308,6 +308,18 @@ return 0;
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105163064-43a86300-5ac8-11eb-89ae-a8a732059692.png)
 
+## 8.write a program to display the nagation of an image
+The negative of an image is achieved by replacing the intensity ‘i’ in the original image by ‘i-1’, i.e. the darkest pixels will become the brightest and the brightest pixels will become the darkest. Image negative is produced by subtracting each pixel from the maximum intensity value.
+## program:
+import cv2
+import numpy as np
+img=cv2.imread("flower.jpg")
+cv2.imshow("original",img)
+cv2.waitKey(0)
+img_neg=255-img;
+cv2.imshow("negation",img_neg)
+cv2.waitKey(0)
+## output:
 
 
 
