@@ -305,8 +305,8 @@ int main()
  p * q;
 return 0;
 }
-output:
-
+## output:
+![image](https://user-images.githubusercontent.com/72590819/105163064-43a86300-5ac8-11eb-89ae-a8a732059692.png)
 
 
 
