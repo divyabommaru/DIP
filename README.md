@@ -320,6 +320,8 @@ img_neg=255-img;
 cv2.imshow("negation",img_neg)
 cv2.waitKey(0)
 ## output:
+![image](https://user-images.githubusercontent.com/72590819/105163630-00022900-5ac9-11eb-80de-3b5e649d0106.png)
+![image](https://user-images.githubusercontent.com/72590819/105163675-127c6280-5ac9-11eb-8263-304b0664e6c7.png)
 
 
 
