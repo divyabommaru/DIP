@@ -310,6 +310,7 @@ return 0;
 
 ## 9.write a program to display the nagation of an image
 The negative of an image is achieved by replacing the intensity ‘i’ in the original image by ‘i-1’, i.e. the darkest pixels will become the brightest and the brightest pixels will become the darkest. Image negative is produced by subtracting each pixel from the maximum intensity value.
+## img_neg=255-img it is used to subtract the img from max value
 ## program:
 import cv2
 import numpy as np
