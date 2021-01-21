@@ -318,7 +318,7 @@ def neighbors(radius, rowNumber, columnNumber):
            for i in range(rowNumber-1-radius, rowNumber+radius)]
 neighbors(1,2,1)
 ## output:
-
+![image](https://user-images.githubusercontent.com/72590819/105341529-13c69180-5b94-11eb-8a2a-b5f5e9fe4863.png)
 
 
 
