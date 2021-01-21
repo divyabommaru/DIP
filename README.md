@@ -353,6 +353,6 @@ cv2.imshow('Truncated Threshold', thresh3)
 cv2.imshow('Set to 0', thresh4)
 cv2.imshow('Set to 0 Inverted', thresh5)
 if cv2.waitKey(0) & 0xff == 27:  
-    cv2.destroyAllWindows() 
-
+    cv2.destroyAllWindows()
+    ## output:
 
