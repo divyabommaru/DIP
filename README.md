@@ -323,6 +323,36 @@ cv2.waitKey(0)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105163630-00022900-5ac9-11eb-80de-3b5e649d0106.png)
 ![image](https://user-images.githubusercontent.com/72590819/105163675-127c6280-5ac9-11eb-8263-304b0664e6c7.png)
+## 10. thresholding:
+thresholding is the simplest  method of segmenting images.
+The different Simple Thresholding Techniques are:
 
+cv2.THRESH_BINARY: If pixel intensity is greater than the set threshold, value set to 255, else set to 0 (black).
+cv2.THRESH_BINARY_INV: Inverted or Opposite case of cv2.THRESH_BINARY.
+cv.THRESH_TRUNC: If pixel intensity value is greater than threshold, it is truncated to the threshold. The pixel values are set to be the same as the threshold. All other values remain the same.
+cv.THRESH_TOZERO: Pixel intensity is set to 0, for all the pixels intensity, less than the threshold value.
+cv.THRESH_TOZERO_INV: Inverted or Opposite case of cv2.THRESH_TOZERO.
+ 
+# applying different thresholding  
+# techniques on the input image
+# all pixels value above 120 will  
+# be set to 255
+## program:
+import cv2  
+import numpy as np  
+image1 = cv2.imread('flower.jpg')  
+img = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
+ret, thresh1 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY)
+ret, thresh2 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY_INV)
+ret, thresh3 = cv2.threshold(img, 120, 255, cv2.THRESH_TRUNC)
+ret, thresh4 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO)
+ret, thresh5 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO_INV)
+cv2.imshow('Binary Threshold', thresh1)
+cv2.imshow('Binary Threshold Inverted', thresh2)
+cv2.imshow('Truncated Threshold', thresh3)
+cv2.imshow('Set to 0', thresh4)
+cv2.imshow('Set to 0 Inverted', thresh5)
+if cv2.waitKey(0) & 0xff == 27:  
+    cv2.destroyAllWindows() 
 
 
