@@ -161,7 +161,7 @@ cv2.imshow("mean of four pictures",meanImg)
 cv2.waitKey(0)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/104436384-8b545980-55b3-11eb-920c-8539526f3a98.png)
-## 7.find the neighborhood values of the matrix
+## 7.Write a program to find the sum of neighbour values in a matrix.
 ## program:
 import numpy as np
 
@@ -189,7 +189,7 @@ print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/104441777-23554180-55ba-11eb-89b3-300fc7997850.png)
-## 8.write a program on operator overloading
+## 8.Write a C++ program to perform operator overloading.
 
 In C++, we can make operators to work for user defined classes. This means C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
 ## program
@@ -307,6 +307,20 @@ return 0;
 }
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105163064-43a86300-5ac8-11eb-89ae-a8a732059692.png)
+## 9.Develop a program to find the neighbours of each element in the matrix.
+## program:
+import numpy as np
+ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
+print("initial_array : ", str(ini_array));
+def neighbors(radius, rowNumber, columnNumber):
+    return[[ini_array[i][j]if i >= 0 and i < len(ini_array) and j >= 0 and j < len(ini_array[0]) else 0
+            for j in range(columnNumber-1-radius, columnNumber+radius)]
+           for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1,2,1)
+## output:
+
+
+
 
 ## 9.write a program to display the nagation of an image
 The negative of an image is achieved by replacing the intensity ‘i’ in the original image by ‘i-1’, i.e. the darkest pixels will become the brightest and the brightest pixels will become the darkest. Image negative is produced by subtracting each pixel from the maximum intensity value.
