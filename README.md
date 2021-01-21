@@ -319,10 +319,7 @@ def neighbors(radius, rowNumber, columnNumber):
 neighbors(1,2,1)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105341529-13c69180-5b94-11eb-8a2a-b5f5e9fe4863.png)
-
-
-
-## 9.write a program to display the nagation of an image
+## 10.write a program to display the nagation of an image
 The negative of an image is achieved by replacing the intensity ‘i’ in the original image by ‘i-1’, i.e. the darkest pixels will become the brightest and the brightest pixels will become the darkest. Image negative is produced by subtracting each pixel from the maximum intensity value.
 ## img_neg=255-img it is used to subtract the img from max value
 ## program:
@@ -337,7 +334,7 @@ cv2.waitKey(0)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105163630-00022900-5ac9-11eb-80de-3b5e649d0106.png)
 ![image](https://user-images.githubusercontent.com/72590819/105163675-127c6280-5ac9-11eb-8263-304b0664e6c7.png)
-## 10. thresholding:
+## 11. thresholding:
 thresholding is the simplest  method of segmenting images.
 The different Simple Thresholding Techniques are:
 
@@ -368,5 +365,5 @@ cv2.imshow('Set to 0', thresh4)
 cv2.imshow('Set to 0 Inverted', thresh5)
 if cv2.waitKey(0) & 0xff == 27:  
     cv2.destroyAllWindows()
-    ## output:
+## output:
 
