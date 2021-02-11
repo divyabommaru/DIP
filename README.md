@@ -319,7 +319,21 @@ def neighbors(radius, rowNumber, columnNumber):
 neighbors(1,2,1)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105341529-13c69180-5b94-11eb-8a2a-b5f5e9fe4863.png)
-## 10.write a program on thresholding
+## 10.write a program to display the nagation of an image 
+The negative of an image is achieved by replacing the intensity ‘i’ in the original image by ‘i-1’, i.e. the darkest pixels will become the brightest and the brightest pixels will become the darkest. Image negative is produced by subtracting each pixel from the maximum intensity value.
+## Program:
+import cv2
+import numpy as np
+img=cv2.imread("flower.jpg")
+cv2.imshow("original",img)
+cv2.waitKey(0)	
+img_neg=255-img;
+cv2.imshow("negation",img_neg)
+cv2.waitKey(0)
+##output:
+
+
+## 11.write a program on thresholding
 Thresholding is the simplest method of segmenting images
 Types of thresholding
 cv2.THRESH_BINARY
@@ -350,7 +364,7 @@ if cv2.waitKey(0) & 0xff == 27:
 ![image](https://user-images.githubusercontent.com/72590819/107618162-fa01f280-6c05-11eb-9f0c-d2de30a1c35b.png)
 ![image](https://user-images.githubusercontent.com/72590819/107618185-02f2c400-6c06-11eb-828a-105a58c8d9a5.png)
 ![image](https://user-images.githubusercontent.com/72590819/107618220-0e45ef80-6c06-11eb-9056-9710e239a07d.png)
-## 11.program to perform gamma transformation 
+## 12.program to perform gamma transformation 
 Power-law (gamma) transformations can be mathematically expressed as s = cr^{\gamma}. Gamma correction is important for displaying images on a screen correctly, to prevent bleaching or darkening of images when viewed from different types of monitors with different display settings.
 cv2.hconcat() it is used as cv2.hconcat() to concatenate image horizontally.here h means horizontal. 
 ## program :
