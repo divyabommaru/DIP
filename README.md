@@ -319,4 +319,32 @@ def neighbors(radius, rowNumber, columnNumber):
 neighbors(1,2,1)
 ## output:
 ![image](https://user-images.githubusercontent.com/72590819/105341529-13c69180-5b94-11eb-8a2a-b5f5e9fe4863.png)
+## 10.write a program on thresholding
+Thresholding is the simplest method of segmenting images
+Types of thresholding
+cv2.THRESH_BINARY
+cv2.THRESH_BINARY_INV
+cv2.THRESH_TRUNC
+cv2.THRESH_TOZERO
+cv2.THRESH_TOZERO_INV
+## program:
+import cv2  
+import numpy as np  
+image1 = cv2.imread('images.jpg')  
+img = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
+ret, thresh1 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY)
+ret, thresh2 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY_INV)
+ret, thresh3 = cv2.threshold(img, 120, 255, cv2.THRESH_TRUNC)
+ret, thresh4 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO)
+ret, thresh5 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO_INV)
+cv2.imshow('Binary Threshold', thresh1)
+cv2.imshow('Binary Threshold Inverted', thresh2)
+cv2.imshow('Truncated Threshold', thresh3)
+cv2.imshow('Set to 0', thresh4)
+cv2.imshow('Set to 0 Inverted', thresh5)  
+if cv2.waitKey(0) & 0xff == 27:  
+    cv2.destroyAllWindows()
+
+
+
 
