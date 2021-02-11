@@ -331,6 +331,8 @@ img_neg=255-img;
 cv2.imshow("negation",img_neg)
 cv2.waitKey(0)
 ##output:
+![image](https://user-images.githubusercontent.com/72590819/107623930-f2931700-6c0e-11eb-992f-71a1068ed90a.png)
+![image](https://user-images.githubusercontent.com/72590819/107623969-0179c980-6c0f-11eb-8ca8-314bf8b28cf6.png)
 
 
 ## 11.write a program on thresholding
